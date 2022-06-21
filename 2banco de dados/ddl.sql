@@ -9,11 +9,6 @@ create table tb_marceneiro(
     ds_senha varchar(100)
 );
 
-create table tb_menu(
-	dt_ped_recente	datetime,
-    dt_data_prox	datetime
-);
-
 create table tb_pedidos(
 	id_pedido int primary key auto_increment,
     nm_pedido varchar (100),

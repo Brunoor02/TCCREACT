@@ -77,11 +77,7 @@ insert into tb_menu(dt_ped_recente, dt_data_prox)
 
 
 drop table tb_marceneiro;
-drop table tb_menu;
-drop table tb_cliente;
 drop table tb_pedidos;
 
 select * from tb_marceneiro;
-select * from tb_menu;
-select * from tb_cliente;
 select * from tb_pedidos;

@@ -52,7 +52,7 @@ export default function Pedidos() {
                 },
                 {
                     label: 'Não',
-                    onClick: () => alert('Click No')
+                    onClick: () => toast('Pedido não foi removido')
                 }
             ],
         })
@@ -138,6 +138,7 @@ export default function Pedidos() {
                             </div>
                             <div className="row">
                                 <span><b>Endereço: {item.endereco}</b></span>
+                                <span><b>Medidas: {item.medida}</b></span>
                                 <span><b>Cor: {item.corEmadeira}</b></span>
                             </div>
                             <div className="row">

@@ -112,25 +112,25 @@ server.put('/pedido/:id', async (req, resp) =>{
 
         const resposta = await alterarPedido(id, pedido);
 
-        if(!novoPedido.nome.trim()){
+        if(!pedido.nome.trim()){
             throw new Error('O nome do Pedido é OBRIGATÓRIO');
         }
-        if(!novoPedido.corEmadeira.trim()){
+        if(!pedido.corEmadeira.trim()){
             throw new Error('A cor do Pedido é OBRIGATÓRIA');
         }
-        if(!novoPedido.endereco.trim()){
+        if(!pedido.endereco.trim()){
             throw new Error('O endereço do Pedido é OBRIGATÓRIO');
         }
-        if(!novoPedido.data.trim()){
+        if(!pedido.data.trim()){
             throw new Error('Insira uma data valida');
         }
-        if(!novoPedido.valor < 0){
+        if(!pedido.valor < 0){
             throw new Error('O valor do pedido é OBRIGATÓRIO');
         }
-        if(!novoPedido.madeira.trim()){
+        if(!pedido.madeira.trim()){
             throw new Error('A resistência do pedido é OBRIGATÓRIA');
         }
-        if(!novoPedido.medida.trim()){
+        if(!pedido.medida.trim()){
             throw new Error('A medida do pedido é OBRIGATÓRIA');
         }
 

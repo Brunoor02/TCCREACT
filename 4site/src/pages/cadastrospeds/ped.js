@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom'
-import escudo from '../../assets/images/escudo.png'
-import gota from '../../assets/images/gota.png'
 import porta from '../../assets/images/sair.png'
 import casa from '../../assets/images/casinha.png'
 import pedido from '../../assets/images/carrinho de compras.png'
@@ -21,7 +19,6 @@ import storage from 'local-storage'
 
 import './ped.scss'
 import '../../common.scss'
-import { set } from 'local-storage'
 
 export default function CadastroPedidos() {
 
@@ -83,6 +80,7 @@ export default function CadastroPedidos() {
                 const r = await cadastrarPedido(nome, corEmadeira, endereco, data, valor, madeira, medida);
                 setId(r);
                 toast('Pedido cadastrado com sucesso')
+                navigate('/cadastro-pedidos')
             }
             else {
                 await alterarPedido(id, nome, corEmadeira, endereco, data, valor, madeira, medida);
@@ -112,7 +110,7 @@ export default function CadastroPedidos() {
             <ToastContainer />
 
             <section className="fx1">
-                <div className='tudoo'>
+                <div className='tudo'>
                     <ToastContainer />
                     <div className="menuNavigation">
                         <h5>Marcenaria power</h5>

@@ -1,4 +1,9 @@
 import m1 from '../../assets/images/1.png'
+import m2 from '../../assets/images/movel.png'
+import m3 from '../../assets/images/mesa.png'
+import m4 from '../../assets/images/raque.png'
+import m5 from '../../assets/images/caminha.png'
+import m6 from '../../assets/images/estante.png'
 import torradeira from '../../assets/images/torradeira.png'
 import cama from '../../assets/images/cama.png'
 import chuveiro from '../../assets/images/chuveiro.png'
@@ -86,7 +91,7 @@ export default function Home() {
       <section className="fx4">
         <div className="fx4-ligue">
           <h1 className="fx4-orça">Venha fazer um orçamento conosco</h1>
-          <button className="fx4-btn">*Contato no rodapé*</button>
+          <p className="fx4-btn">*Contato no rodapé*</p>
         </div>
         <div className="fx4-sobre">
           <h2>sobre</h2>
@@ -101,21 +106,21 @@ export default function Home() {
             <img src={m1} alt="" width="300" />
           </div>
           <div className="fx5-img">
-            <img src={m1} alt="" width="300" />
+            <img src={m2} alt="" width="300" />
           </div>
           <div className="fx5-img">
-            <img src={m1} alt="" width="300" />
+            <img src={m3} alt="" width="300" />
           </div>
         </div>
         <div className="fx5-p2">
           <div className="fx5-img">
-            <img src={m1} alt="" width="300" />
+            <img src={m4} alt="" width="300" />
           </div>
           <div className="fx5-img">
-            <img src={m1} alt="" width="300" />
+            <img src={m5} alt="" width="300" />
           </div>
           <div className="fx5-img">
-            <img src={m1} alt="" width="300" />
+            <img src={m6} alt="" width="300" />
           </div>
         </div>
       </section>
@@ -126,10 +131,10 @@ export default function Home() {
           <p className="fx6-nome">Marcenaria Power</p>
         </div>
         <div className="fx6-info">
-          <p>(11) 90000-0000</p>
-          <p>(11) 1111-1111</p>
-          <p>@instamarceneiro</p>
-          <p>email@orçamento.com</p>
+          <p>(11) 94562-1098</p>
+          <p>(11) 4821-1921</p>
+          <p>@marcenariapower</p>
+          <p>marcenariapower@orçamento.com</p>
         </div>
       </section>
 
