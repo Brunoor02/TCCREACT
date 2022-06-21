@@ -32,7 +32,6 @@ export default function Home() {
         <img src={logo} alt="" width="200" />
 
         <div className="d-md-none btn">
-          <Link to="/"> INICIO </Link>
           <Link to="/Login"> LOGIN </Link>
         </div>
       </section>

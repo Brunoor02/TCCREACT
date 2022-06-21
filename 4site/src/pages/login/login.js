@@ -1,6 +1,7 @@
 import logo from '../../assets/images/logo certa.PNG'
 import { logar } from '../../api/usuarioAPI'
 
+import { Link } from 'react-router-dom'
 import storage from 'local-storage'
 import { useNavigate } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
@@ -55,6 +56,7 @@ export default function Logar() {
         <main>
             <LoadingBar color='#ffff96' ref={ref} />
 
+            <Link to="/" className='button-inicio'> INICIO </Link>
             <section className="fax1 fax1-img">
                 <div className="login">
                     <div>
