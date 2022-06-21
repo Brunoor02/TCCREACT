@@ -121,7 +121,7 @@ export default function CadastroPedidos() {
                         </Link>
                         <Link to="/cadastro-pedidos" className="itemMenu">
                             <img src={pedido} alt="" width="30" />
-                            <div>Cadastro de Pedidos</div>
+                            <div className='cadastro-p'>Cadastro de Pedidos</div>
                         </Link>
                         <Link to="/pedidos" className="itemMenu">
                             <img src={folha} alt="" width="30" />

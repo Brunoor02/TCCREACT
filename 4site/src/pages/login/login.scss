@@ -1,8 +1,18 @@
 body{
-    background-image: url(../../assets/images/FundoAdm.png);
+    background-color: #C48857;
+}
+
+.login-page {
+    background-image: url(http://localhost:3000/assets/images/FundoAdm.png);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .fax1 {
+    
     position: relative;
     width: 100%;
     display: flex;
@@ -16,13 +26,12 @@ body{
     background-image: url(../../assets/images/madeira.png);
     display: flex;
     flex-direction: column;
-    height: 60vh;
-    width: 40%;
+    height: 50vh;
+    width: 40em;
     align-items: center;
     text-align: center;
-    left: 30%;
     padding: 0% 0%;
-    margin-top: 10%;
+    //margin-top: 10%;
 }
 
 .login {

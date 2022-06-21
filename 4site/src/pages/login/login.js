@@ -51,6 +51,7 @@ export default function Logar() {
 
 
     return (
+        <div className='login-page'>
         <main>
             <LoadingBar color='#ffff96' ref={ref} />
 
@@ -86,5 +87,6 @@ export default function Logar() {
             </section>
 
         </main>
+        </div>
     )
 }
