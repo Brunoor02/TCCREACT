@@ -9,10 +9,11 @@ import '../../common.scss'
 
 import storage from 'local-storage'
 import { useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function ADM() {
-
+    const [usuario, setUsuario] = useState('-')
+    
     const navigate = useNavigate();
 
     function sair() {
@@ -21,9 +22,13 @@ export default function ADM() {
     }
 
     useEffect(() => {
-        if (!storage('usuario-logado'))
-            navigate('/login')
-    })
+        if (!storage('usuario-logado')){
+            navigate('/login');
+        } else{
+            const usuarioLogado = storage('usuario-logado');
+            setUsuario(usuarioLogado.nome)
+        }
+},[])
 
     return (
         <main>
@@ -47,8 +52,8 @@ export default function ADM() {
                             </Link>
 
                             <div className="userAction">
-                                <p>Logado: Dono</p>
-                                <Link to="/login">Log Out <img src={porta} alt=""
+                                <p>Logado: {usuario}</p>
+                                <Link to="/login" onClick={sair}>Log Out <img src={porta} alt=""
                                     width="20" /></Link>
                             </div>
                         </div>

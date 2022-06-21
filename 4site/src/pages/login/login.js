@@ -11,17 +11,18 @@ import './login.scss'
 
 
 
-export default function Logar (){ 
+export default function Logar() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [erro, setErro] = useState('');
     const [carregando, setCarregando] = useState(false)
+
     
     const navigate = useNavigate();
     const ref = useRef();
 
-    useEffect(() =>{
-        if (storage('usuario-logado')){
+    useEffect(() => {
+        if (storage('usuario-logado')) {
             navigate('/ADM')
         }
     })
@@ -30,42 +31,52 @@ export default function Logar (){
         ref.current.continuousStart();
         setCarregando(true);
 
-        try { 
+        try {
             const r = await logar(email, senha);
-            storage('usuario-logado', r )
+            storage('usuario-logado', r)
 
             setTimeout(() => {
                 navigate('/ADM');
-            }, 3000);
+            }, 1000);
 
         } catch (err) {
             ref.current.complete();
             setCarregando(false);
-    
-            if (err.response.status === 401){
+
+            if (err.response.status === 401) {
                 setErro(err.response.data.erro);
             }
         }
     }
-  
 
-    return(
+
+    return (
         <main>
-            <LoadingBar color='#ffff96' ref={ref}/>
+            <LoadingBar color='#ffff96' ref={ref} />
 
             <section className="fax1 fax1-img">
                 <div className="login">
                     <div>
-                        <img src={logo} alt="" width="100" className="fax1-logo"/>
+                        <img src={logo} alt="" width="100" className="fax1-logo" />
                     </div>
-                    <div>
+                    <div className='grid'>
                         <h2>Marcenaria power</h2>
 
-                        <p>UsuÃ¡rio:<input type="text" placeholder='Informe seu email' value={email} onChange={e => setEmail(e.target.value)}/></p>
+                        <div className='grid grid-template-columns-2'>
+                            <label >
+                                Usuário:
+                            </label>
+                            <input type="text" placeholder='Informe seu email' value={email} onChange={e => setEmail(e.target.value)} />
+                        </div>
+                        <div className='grid grid-template-columns-2'>
+                            <label>
+                                Senha:
+                            </label>
+                            <input type="password" placeholder='***' value={senha} onChange={e => setSenha(e.target.value)} />
+                        </div>
 
-                        <p>Senha:<input type="password" placeholder='***' value={senha} onChange={e => setSenha(e.target.value)}/></p>
 
-                        <button  onClick={entrarClick} disabled={carregando} >Login</button>
+                        <button onClick={entrarClick} disabled={carregando} >Login</button>
 
                         <div className='invalido'>
                             {erro}
@@ -74,6 +85,6 @@ export default function Logar (){
                 </div>
             </section>
 
-    </main>
+        </main>
     )
 }

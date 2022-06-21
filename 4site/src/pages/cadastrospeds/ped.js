@@ -11,7 +11,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { alterarPedido, buscarPorId, cadastrarPedido } from '../../api/pedidoApi';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import storage from 'local-storage'
+
+
+
 
 
 
@@ -29,6 +33,8 @@ export default function CadastroPedidos() {
     const [madeira, setMadeira] = useState('');
     const [medida, setMedida] = useState('');
     const [id, setId] = useState(0);
+
+    const [usuario, setUsuario] = useState('-')
 
     const { idParam } = useParams();
 
@@ -50,6 +56,22 @@ export default function CadastroPedidos() {
         setId(resposta.id);
 
     }
+
+    const navigate = useNavigate();
+
+    function sair() {
+        storage.remove('usuario-logado');
+        navigate('/login')
+    }
+
+    useEffect(() => {
+        if (!storage('usuario-logado')){
+            navigate('/login');
+        } else{
+            const usuarioLogado = storage('usuario-logado');
+            setUsuario(usuarioLogado.nome)
+        }
+},[])
 
 
     async function salvarClick() {
@@ -109,8 +131,8 @@ export default function CadastroPedidos() {
                         </Link>
 
                         <div className="userAction">
-                            <p>Logado: Dono</p>
-                            <Link to="/login">Log Out <img src={porta} alt=""
+                            <p>Logado: {usuario}</p>
+                            <Link to="/login" onClick={sair}>Log Out <img src={porta} alt=""
                                 width="20" /></Link>
                         </div>
                     </div>
