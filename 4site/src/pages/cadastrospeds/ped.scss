@@ -1,0 +1,128 @@
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    height: 50vh;
+    align-items: center;
+    padding: 20% 0%;
+    margin-left: 20%;
+    justify-content: space-between;
+    background-color: #965816;
+}
+
+.cadastro1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    justify-content: space-between;
+
+}
+
+.cad{
+    display: flex;
+    flex-direction: row;
+}
+
+.separar{
+    display: flex;
+    flex-direction: column;
+    font-size: 110%;
+}
+
+.separar a{
+    display: flex;
+    background-color: #81490E;
+    padding: 5% 1%;
+    font-size: 60% !important;
+    align-items: center;
+    color: white;
+}
+
+.fx1{
+    background-color: #C48857;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: 'Lemon regular';
+}
+
+
+.fx1-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #965816;
+    padding: 0.5%;
+    height: 98vh;
+
+
+}
+
+.selecionado{
+    align-items: center;
+}
+
+.conta{
+    padding: 10%;
+    font-size: 100%;
+    background-color: #BD782B;
+}
+
+.btnn{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 24%;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 3%;
+    margin-left: 10px;
+    
+}
+
+.cadastro1 input p{
+    align-items: center;
+    text-align: center;
+    font-family: 'Lemon regular';
+}
+
+.cadastro1 p{
+    margin-top: 10%;
+    width: 5%;
+}
+
+.fx1 h1 {
+    padding: 6%;
+    font-size: 180%;
+}
+
+.tipo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 60%;
+    width: 15%;
+}
+
+.coments{
+    height: 200px;
+    width: 500px;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    padding: 0%, 10%;
+}
+
+.cadastro-pag{
+    margin-left: 10%;
+}
+
+

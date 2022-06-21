@@ -1,0 +1,70 @@
+body{
+    background-image: url(../../assets/images/FundoAdm.png);
+}
+
+.fax1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lemon regular';
+    
+}
+
+.fax1-img {
+    background-image: url(../../assets/images/madeira.png);
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    left: 30%;
+    padding: 0% 0%;
+    margin-top: 10%;
+}
+
+.login {
+    padding: 5% 0%;
+    align-items: center;
+    text-align: center;
+}
+
+.fax1 input {
+    width: 100%;
+    padding: 1% 1%;
+    font-size: 130%;
+}
+
+.fax1 button {
+    text-decoration: none;
+    color: #000;
+    border: 0%;
+    background-color: #ECA359;
+    padding: 3% 5%;
+}
+
+.fax1 p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.fax1-logo {
+    border-radius: 50%;
+    width: 20%;
+    padding: 2% 0%;
+}
+
+.invalido {
+    display: flex;
+    justify-content: center;
+    font: 700 14px 'Inter';
+    color: #000;
+    letter-spacing: 1px;
+    position: relative;
+    top: 40px;
+    height: 50px;
+}

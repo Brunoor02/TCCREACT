@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.separar a{
+    background-color: #81490E;
+    padding: 5% 1%;
+    font-size: 60% !important;
+    align-items: center;
+    color: white;
+}
+
+.tudinho{
+    background-color: #C48857;
+    min-height: 85vh;
+}
+
+.faixa1{
+    display: flex;
+    background-color: #C48857;
+    flex-direction: row;
+    height: 100vh;
+    font-family: 'Lemon regular';
+
+
+.fx1-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #965816;
+    padding: 0.5%;
+    height: 98vh;
+
+
+}
+
+.conta{
+    padding: 10%;
+    font-size: 100%;
+    background-color: #BD782B;
+}
+
+.fx1-pedds{
+    display: flex;
+    flex-direction: column;
+    width: 53%;
+    padding: 0% 0% 0% 8%;
+}
+
+.fx1-fecha{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0%;
+}
+
+.fx1-fecha div{
+    background-color: #965816;
+    color: white;
+    width: 140%;
+    font-size: 80%;
+    padding: 0% 10%;
+    line-height: 900.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.separar{
+    display: flex;
+    flex-direction: column;
+    font-size: 110%;
+    text-align: center;
+}
+
+.prodsepa1{
+    display: flex;
+    flex-direction: column;
+}
+
+.prodsepa2{
+    display: flex;
+    flex-direction: column;
+}
+
+.fx1 h5{
+    text-align: center;
+}
+
+.ped1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: white;
+    padding: 2% 0%;
+}
+
+.fx1-pedds a{
+    background-color: white;
+    color: black;
+    padding: 2% 2%;
+    text-align: center;
+    align-items: center;
+}
+
+.fx1-pedds p{
+    padding: 4%;
+    width: 560%;
+}
+
+.alt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #965816;
+    padding: 0% 5% 0% 0%;
+}
+
+.logo{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    padding: 11% 18%;
+}
+
+.texto{
+    padding: 2% 6%;
+    font-size: 180%;
+}
+
+}

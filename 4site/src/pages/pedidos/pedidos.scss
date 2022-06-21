@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lemon Regular';
+    
+}
+
+.tudoo{
+    background-color: #C48857;
+    min-height: 100vh;
+}
+
+.menuNavigation{
+    position: fixed;
+    background-color: #965816;
+    padding: 5px;
+    text-align: center;
+    width: 10%;
+    max-width: 300px;
+    height: 100vh;
+
+}
+
+.menuNavigation h5{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.menuNavigation .itemMenu{
+    display: flex;
+    background-color: #81490E;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.65em;
+}
+
+.menuNavigation .itemMenu img{
+    margin-right: 10px;
+}
+
+.menuNavigation .userAction{
+    position: absolute;
+    background-color: #BD782B;
+    text-align: left;
+    align-items: flex-end;
+    bottom: 2%;
+    width: 90%;
+    margin-left: 2%;
+    padding: 8px 2px;
+}
+
+.menuNavigation .userAction p{
+    margin-bottom: 10px;
+}
+
+.conteudoPagina{
+    position: absolute;
+    width: 88%;
+    right: 0%;
+    
+}
+
+.conteudoPagina .tituloPagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.conteudoPagina .tituloPagina a{
+    font-size: 0.7em;
+    margin-right: 30px;
+    background-color: #BD782B;
+    padding: 10px 15px;
+}
+
+.conteudoPagina .filtroPagina{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.conteudoPagina .filtroPagina input{
+    padding: 5px 30px;
+    margin-left: 15px;
+    width: 60%;
+}
+
+.conteudoPagina .cardsPagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.conteudoPagina .card{
+    margin: 30px 10px;
+    padding: 60px 60px;
+    background-color: #965816;
+}
+
+.conteudoPagina .row{
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+
+.conteudoPagina .tipoProduto{
+    align-items: center;
+}
+
+.caixa-busca {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+    padding: 5px 40px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px rgb(220, 220, 220);
+    width: 60%;
+    margin-left: 15px;
+}
+.caixa-busca input {
+    background: none;
+    border: none;
+    padding: 0px;
+    width: 100%;
+}
+.caixa-busca img {
+    cursor: pointer;
+    position: relative;
+    right: -15px;
+}
