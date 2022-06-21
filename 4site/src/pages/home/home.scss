@@ -133,7 +133,7 @@
     display: block;
     margin: auto;
     height: 60%;
-    width: 60%;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -142,8 +142,9 @@
 .fx3-fz{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 60%;
     align-items: center;
+    margin: auto;
 }
 
 .fx3-fz2{
@@ -156,20 +157,25 @@
     margin-bottom: 7%;
 }
 
+.tituloFz{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
 .fx3-txt{
     margin-top: 6%;
     font-size: 400%;
 }
 
 .fx3-fz h1{
-   padding: 0% 20%;
+   padding: 0% 5%;
    margin-bottom: 5%;
 }
 
 
 
 .fx3 img{
-    position: absolute;
     left: 14%;
     padding: 0% 0%;
 }
@@ -384,13 +390,19 @@
     //         margin-bottom: 7%;
         font-size: 11px;
         height: 20vh;
+        padding: 2% 2%;
+     }
+
+     .tituloFz{
+        display: flex;
+        justify-content: flex-start;
      }
 
     .fx3-fz{
         position: relative;
-        width: 170%;
+        width: 100%;
         padding: 2% 0%;
-        margin: 0% -35%;
+
         margin-right: 10%;
         margin-bottom: 7%;
         font-size: 10px;
@@ -402,12 +414,10 @@
     .fx3 img{
         width: 20%;
         margin-bottom: 10%;
-        position: relative;
-        margin-right: 10%;
     }
 
     .fx3-img{
-        width: 40% !important;
+        width: 30% !important;
     }
     
     .fx4{
