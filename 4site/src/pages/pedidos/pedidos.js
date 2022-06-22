@@ -129,7 +129,7 @@ export default function Pedidos() {
                                 <span><b>Id: {item.id}</b></span>
                                 <span><b>Produto: {item.nome}</b></span>
                                 <div className="tipoProduto">
-                                    <div for="gotaPlus">Tipo de madeira: {item.madeira}</div>
+                                    <div for="gotaPlus">Resistência: {item.madeira}</div>
                                 </div>
                                 <div>
                                     <img src={lixo} alt="" width="35" onClick={() => removerPedidoClick(item.id, item.nome)} />
@@ -138,11 +138,11 @@ export default function Pedidos() {
                             </div>
                             <div className="row">
                                 <span><b>Endereço: {item.endereco}</b></span>
-                                <span><b>Medidas: {item.medida}</b></span>
                                 <span><b>Cor: {item.corEmadeira}</b></span>
                             </div>
                             <div className="row">
                                 <div><b>Data: {String(item.data).substr(0, 10)}</b></div>
+                                <span><b>Medidas: {item.medida}</b></span>
                                 <span><b>Valor: {item.valor}</b></span>
                             </div>
                         </div>

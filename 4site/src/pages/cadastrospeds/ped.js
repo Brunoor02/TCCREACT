@@ -144,7 +144,7 @@ export default function CadastroPedidos() {
                             <p>Produto <input type="text" placeholder='nome do produto' value={nome} onChange={e => setNome(e.target.value)} /></p>
                             <p>Medidas <input type="text" placeholder='medidas do produto' value={medida} onChange={e => setMedida(e.target.value)} /></p>
                             <p>Data <input type="date" placeholder='data de entrega' value={data} onChange={e => setData(e.target.value)} /></p>
-                            <p>Madeira <input type="text" placeholder='resistencia da madeira' value={madeira} onChange={e => setMadeira(e.target.value)} /></p>
+                            <p>Resistência <input type="text" placeholder='ex: à água' value={madeira} onChange={e => setMadeira(e.target.value)} /></p>
                         </div>
                         <div className="cadastro1">
                             <p>Endereço <input type="text" placeholder='endereço do cliente' value={endereco} onChange={e => setEndereco(e.target.value)} /></p>

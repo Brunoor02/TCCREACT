@@ -21,7 +21,7 @@ server.post('/marcenaria', async (req, resp) =>{
         if(!novoPedido.data.trim()){
             throw new Error('Insira uma data valida');
         }
-        if(!novoPedido.valor < 0){
+        if(!novoPedido.valor < 1){
             throw new Error('O valor do pedido é OBRIGATÓRIO');
         }
         if(!novoPedido.madeira.trim()){
@@ -124,7 +124,7 @@ server.put('/pedido/:id', async (req, resp) =>{
         if(!pedido.data.trim()){
             throw new Error('Insira uma data valida');
         }
-        if(!pedido.valor < 0){
+        if(!pedido.valor < 1){
             throw new Error('O valor do pedido é OBRIGATÓRIO');
         }
         if(!pedido.madeira.trim()){
